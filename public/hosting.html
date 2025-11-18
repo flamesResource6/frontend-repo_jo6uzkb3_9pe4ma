@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flames Cloud VPS — Fast, Reliable, Globally Available</title>
+    <meta name="description" content="Deploy blazing-fast NVMe VPS with DDoS protection, instant scaling, and global regions. Simple pricing. No surprises." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui"],
+            },
+            colors: {
+              brand: {
+                50: '#f2f9ff',
+                100: '#e6f2ff',
+                200: '#bfdeff',
+                300: '#99caff',
+                400: '#66adff',
+                500: '#3a90ff',
+                600: '#1e78f5',
+                700: '#175fcc',
+                800: '#134da3',
+                900: '#0f3e82'
+              }
+            },
+            boxShadow: {
+              glow: '0 0 0 1px rgba(255,255,255,0.08), 0 8px 40px rgba(17,24,39,0.6)'
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root { color-scheme: dark; }
+      body { background: radial-gradient(1200px 800px at 80% -10%, rgba(59,130,246,0.25), transparent 60%),
+                               radial-gradient(800px 600px at -10% 10%, rgba(139,92,246,0.2), transparent 60%),
+                               #0b0f1a; }
+      .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); }
+      .card { background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)); border: 1px solid rgba(255,255,255,0.08); }
+      .ring-soft { box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08); }
+    </style>
+  </head>
+  <body class="text-white font-sans antialiased">
+    <!-- Navbar -->
+    <header class="fixed top-0 inset-x-0 z-50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mt-4 flex items-center justify-between rounded-2xl glass ring-soft px-4 py-3">
+          <a href="/hosting.html" class="flex items-center gap-2">
+            <img src="/flame-icon.svg" alt="Flames" class="h-6 w-6" />
+            <span class="text-sm font-semibold tracking-wide">Flames Cloud</span>
+          </a>
+          <nav class="hidden md:flex items-center gap-8 text-sm text-white/80">
+            <a href="#features" class="hover:text-white">Features</a>
+            <a href="#pricing" class="hover:text-white">Pricing</a>
+            <a href="#testimonials" class="hover:text-white">Customers</a>
+            <a href="#faq" class="hover:text-white">FAQ</a>
+            <a href="/test" class="hover:text-white">System Test</a>
+          </nav>
+          <div class="hidden md:flex items-center gap-3">
+            <a href="#pricing" class="text-sm px-4 py-2 rounded-lg ring-soft hover:bg-white/5 transition">View Plans</a>
+            <a href="#pricing" class="text-sm px-4 py-2 rounded-lg bg-brand-600 hover:bg-brand-500 transition shadow-glow">Launch Console</a>
+          </div>
+          <button id="menuBtn" aria-label="Open menu" class="md:hidden px-3 py-2 rounded-lg ring-soft">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+        <div id="mobileMenu" class="md:hidden mt-2 hidden rounded-2xl glass ring-soft px-4 py-3">
+          <div class="flex flex-col gap-3 text-sm text-white/80">
+            <a href="#features" class="hover:text-white">Features</a>
+            <a href="#pricing" class="hover:text-white">Pricing</a>
+            <a href="#testimonials" class="hover:text-white">Customers</a>
+            <a href="#faq" class="hover:text-white">FAQ</a>
+            <a href="/test" class="hover:text-white">System Test</a>
+            <a href="#pricing" class="mt-2 px-4 py-2 rounded-lg bg-brand-600 hover:bg-brand-500 text-white text-center">Launch Console</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-28">
+      <!-- Hero -->
+      <section class="relative overflow-hidden">
+        <div class="absolute inset-0 -z-10 opacity-40" aria-hidden="true">
+          <div class="absolute -top-24 right-1/4 h-96 w-96 rounded-full blur-3xl bg-brand-600/40"></div>
+          <div class="absolute top-1/3 -left-20 h-80 w-80 rounded-full blur-3xl bg-purple-500/30"></div>
+        </div>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
+          <div class="text-center">
+            <p class="inline-flex items-center gap-2 text-xs px-3 py-1 rounded-full ring-soft bg-white/5 mb-4">
+              <span class="inline-block h-2 w-2 rounded-full bg-emerald-400"></span>
+              99.99% uptime SLA • Global Anycast DDoS
+            </p>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
+              Cloud VPS that ships <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-purple-400">in seconds</span>
+            </h1>
+            <p class="mt-5 text-white/70 max-w-2xl mx-auto">
+              Spin up NVMe instances with instant provisioning, dedicated IPv4, and automated backups. Transparent pricing. No surprises.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+              <a href="#pricing" class="px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 shadow-glow text-sm font-semibold text-white">Launch Console</a>
+              <a href="#features" class="px-5 py-3 rounded-xl ring-soft hover:bg-white/5 text-sm font-semibold">Explore Features</a>
+            </div>
+            <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto">
+              <div class="card rounded-xl px-4 py-3 text-xs text-white/80">NVMe Gen4</div>
+              <div class="card rounded-xl px-4 py-3 text-xs text-white/80">DDoS Protection</div>
+              <div class="card rounded-xl px-4 py-3 text-xs text-white/80">1 Tbps Network</div>
+              <div class="card rounded-xl px-4 py-3 text-xs text-white/80">Backups & Snapshots</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold">Everything you need to scale</h2>
+            <p class="text-white/60 mt-2">Performance, security, and automation out of the box.</p>
+          </div>
+          <div class="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Feature cards -->
+            <div class="card rounded-2xl p-5 shadow-glow">
+              <div class="flex items-center gap-3">
+                <span class="h-8 w-8 rounded-lg bg-brand-600/30 flex items-center justify-center ring-soft">⚡</span>
+                <h3 class="font-semibold">NVMe Gen4 Disks</h3>
+              </div>
+              <p class="mt-2 text-sm text-white/70">Blazing low-latency storage with high IOPS for real workloads.</p>
+            </div>
+            <div class="card rounded-2xl p-5 shadow-glow">
+              <div class="flex items-center gap-3">
+                <span class="h-8 w-8 rounded-lg bg-brand-600/30 flex items-center justify-center ring-soft">🛡️</span>
+                <h3 class="font-semibold">DDoS Protection</h3>
+              </div>
+              <p class="mt-2 text-sm text-white/70">Global Anycast scrubbing with always-on mitigation.</p>
+            </div>
+            <div class="card rounded-2xl p-5 shadow-glow">
+              <div class="flex items-center gap-3">
+                <span class="h-8 w-8 rounded-lg bg-brand-600/30 flex items-center justify-center ring-soft">🌐</span>
+                <h3 class="font-semibold">Global Regions</h3>
+              </div>
+              <p class="mt-2 text-sm text-white/70">Deploy close to your users across 10+ regions worldwide.</p>
+            </div>
+            <div class="card rounded-2xl p-5 shadow-glow">
+              <div class="flex items-center gap-3">
+                <span class="h-8 w-8 rounded-lg bg-brand-600/30 flex items-center justify-center ring-soft">🔁</span>
+                <h3 class="font-semibold">Snapshots & Backups</h3>
+              </div>
+              <p class="mt-2 text-sm text-white/70">Automated protection with point‑in‑time restore.</p>
+            </div>
+            <div class="card rounded-2xl p-5 shadow-glow">
+              <div class="flex items-center gap-3">
+                <span class="h-8 w-8 rounded-lg bg-brand-600/30 flex items-center justify-center ring-soft">🔒</span>
+                <h3 class="font-semibold">Private Networking</h3>
+              </div>
+              <p class="mt-2 text-sm text-white/70">Isolate traffic and interconnect services with VPC.</p>
+            </div>
+            <div class="card rounded-2xl p-5 shadow-glow">
+              <div class="flex items-center gap-3">
+                <span class="h-8 w-8 rounded-lg bg-brand-600/30 flex items-center justify-center ring-soft">🤖</span>
+                <h3 class="font-semibold">API & Automation</h3>
+              </div>
+              <p class="mt-2 text-sm text-white/70">CLI and REST to manage fleets, images, and backups.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold">Simple, predictable pricing</h2>
+            <p class="text-white/60 mt-2">Hourly billing. Bandwidth included. Cancel anytime.</p>
+          </div>
+          <div class="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <!-- Plan cards -->
+            <div class="card rounded-2xl p-6 flex flex-col">
+              <div class="text-sm text-white/60">Nano</div>
+              <div class="mt-1 text-3xl font-extrabold">$4<span class="text-base font-semibold text-white/60">/mo</span></div>
+              <ul class="mt-4 text-sm text-white/80 space-y-2">
+                <li>1 vCPU • 512 MB RAM</li>
+                <li>15 GB NVMe</li>
+                <li>1 TB transfer</li>
+                <li>IPv4 + IPv6</li>
+              </ul>
+              <a href="#" class="mt-6 inline-flex justify-center px-4 py-2 rounded-lg ring-soft hover:bg-white/5 text-sm">Choose Nano</a>
+            </div>
+            <div class="card rounded-2xl p-6 flex flex-col ring-1 ring-brand-600/40">
+              <div class="flex items-center justify-between">
+                <div class="text-sm text-white/60">Micro</div>
+                <span class="text-xxs px-2 py-0.5 rounded-full bg-brand-600/30 ring-soft">Popular</span>
+              </div>
+              <div class="mt-1 text-3xl font-extrabold">$8<span class="text-base font-semibold text-white/60">/mo</span></div>
+              <ul class="mt-4 text-sm text-white/80 space-y-2">
+                <li>1 vCPU • 1 GB RAM</li>
+                <li>25 GB NVMe</li>
+                <li>2 TB transfer</li>
+                <li>IPv4 + IPv6</li>
+              </ul>
+              <a href="#" class="mt-6 inline-flex justify-center px-4 py-2 rounded-lg bg-brand-600 hover:bg-brand-500 shadow-glow text-sm">Choose Micro</a>
+            </div>
+            <div class="card rounded-2xl p-6 flex flex-col">
+              <div class="text-sm text-white/60">Small</div>
+              <div class="mt-1 text-3xl font-extrabold">$16<span class="text-base font-semibold text-white/60">/mo</span></div>
+              <ul class="mt-4 text-sm text-white/80 space-y-2">
+                <li>2 vCPU • 2 GB RAM</li>
+                <li>50 GB NVMe</li>
+                <li>3 TB transfer</li>
+                <li>IPv4 + IPv6</li>
+              </ul>
+              <a href="#" class="mt-6 inline-flex justify-center px-4 py-2 rounded-lg ring-soft hover:bg-white/5 text-sm">Choose Small</a>
+            </div>
+            <div class="card rounded-2xl p-6 flex flex-col">
+              <div class="text-sm text-white/60">Medium</div>
+              <div class="mt-1 text-3xl font-extrabold">$28<span class="text-base font-semibold text-white/60">/mo</span></div>
+              <ul class="mt-4 text-sm text-white/80 space-y-2">
+                <li>3 vCPU • 4 GB RAM</li>
+                <li>80 GB NVMe</li>
+                <li>4 TB transfer</li>
+                <li>IPv4 + IPv6</li>
+              </ul>
+              <a href="#" class="mt-6 inline-flex justify-center px-4 py-2 rounded-lg ring-soft hover:bg-white/5 text-sm">Choose Medium</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="testimonials" class="py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold">Trusted by fast‑moving teams</h2>
+            <p class="text-white/60 mt-2">Real words from real customers.</p>
+          </div>
+          <div class="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-3">
+            <figure class="card rounded-2xl p-6">
+              <blockquote class="text-white/90">“Provisioning in under 30 seconds. Exactly what our CI runners needed.”</blockquote>
+              <figcaption class="mt-3 text-sm text-white/60">— Leah, DevOps Lead</figcaption>
+            </figure>
+            <figure class="card rounded-2xl p-6">
+              <blockquote class="text-white/90">“Bandwidth pricing is refreshingly simple. Moved our edge services in a day.”</blockquote>
+              <figcaption class="mt-3 text-sm text-white/60">— Marco, CTO</figcaption>
+            </figure>
+            <figure class="card rounded-2xl p-6">
+              <blockquote class="text-white/90">“APIs and snapshots are rock solid. We scaled to 200 nodes without drama.”</blockquote>
+              <figcaption class="mt-3 text-sm text-white/60">— Priya, Platform Eng</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="py-16 sm:py-20">
+        <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-8 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold">Frequently asked questions</h2>
+            <p class="text-white/60 mt-2">Answers to common queries.</p>
+          </div>
+          <div class="space-y-4">
+            <details class="card rounded-xl p-5">
+              <summary class="cursor-pointer font-semibold">How quickly can I deploy?</summary>
+              <p class="mt-2 text-sm text-white/70">Most instances deploy in under 60 seconds thanks to image caching.</p>
+            </details>
+            <details class="card rounded-xl p-5">
+              <summary class="cursor-pointer font-semibold">Do you include DDoS protection?</summary>
+              <p class="mt-2 text-sm text-white/70">Yes, always-on mitigation with global Anycast is included on all plans.</p>
+            </details>
+            <details class="card rounded-xl p-5">
+              <summary class="cursor-pointer font-semibold">Can I take snapshots and backups?</summary>
+              <p class="mt-2 text-sm text-white/70">Automated nightly backups and manual snapshots are available per instance.</p>
+            </details>
+            <details class="card rounded-xl p-5">
+              <summary class="cursor-pointer font-semibold">Is there an API?</summary>
+              <p class="mt-2 text-sm text-white/70">Yes, full REST and CLI for provisioning, scaling, and image management.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="pb-10">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row gap-4 md:items-center md:justify-between text-sm text-white/60">
+          <p>© <span id="year"></span> Flames Cloud. All rights reserved.</p>
+          <nav class="flex flex-wrap items-center gap-4">
+            <a href="#" class="hover:text-white">Status</a>
+            <a href="#" class="hover:text-white">Docs</a>
+            <a href="#" class="hover:text-white">Privacy</a>
+            <a href="/test" class="hover:text-white">System Test</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.getElementById('menuBtn');
+      const menu = document.getElementById('mobileMenu');
+      btn?.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
